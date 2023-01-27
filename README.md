@@ -6,7 +6,7 @@ This application was created in order to allow a user to enter their  team membe
 
 ## License
     
-![NPM](https://img.shields.io/npm/l/inquirer@8.2.4)
+![NPM](https://img.shields.io/npm/l/inquirer)
     
 ## Table of Contents
    
