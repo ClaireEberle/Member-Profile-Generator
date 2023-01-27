@@ -58,7 +58,9 @@ const ManagerQ = () => {
             addIntern();
         }else {
             console.log("done")
-            generateHtml(team);
+            fs.writeFile("./Output/TeamProfiles.html", generateHtml(team), (err) =>
+            err ? console.error(err) : console.log("success!")
+            );
         }
     })
     }
@@ -103,7 +105,9 @@ const addEngineer = () =>{
             addIntern();
         }else {
             console.log("done")
-            generateHtml();
+            fs.writeFile("./Output/TeamProfiles.html", generateHtml(team), (err) =>
+            err ? console.error(err) : console.log("success!")
+            );
         }
     })
 }
@@ -148,7 +152,9 @@ const addIntern = () => {
         addIntern();
     }else {
         console.log("done")
-        generateHtml();
+        fs.writeFile("./Output/TeamProfiles.html", generateHtml(team), (err) =>
+            err ? console.error(err) : console.log("success!")
+            );
     }
 })
 }
